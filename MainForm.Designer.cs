@@ -32,6 +32,7 @@
             System.Windows.Forms.Label label5;
             System.Windows.Forms.Label label8;
             System.Windows.Forms.Label label12;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.cmbVideoSource = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.StartButton = new System.Windows.Forms.Button();
@@ -586,7 +587,7 @@
             // startBot
             // 
             this.startBot.Location = new System.Drawing.Point(974, 555);
-            this.startBot.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.startBot.Margin = new System.Windows.Forms.Padding(2);
             this.startBot.Name = "startBot";
             this.startBot.Size = new System.Drawing.Size(110, 33);
             this.startBot.TabIndex = 42;
@@ -598,6 +599,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1278, 763);
             this.Controls.Add(this.startBot);
             this.Controls.Add(this.label14);
